@@ -33,7 +33,7 @@ public protocol ShowCoordinator: DefaultCoordinator {
 
 public protocol PushCoordinator: DefaultCoordinator {
     func configure(viewController: ViewController)
-    var navigationController: UINavigationController? { get }
+    var navigationController: UINavigationController { get }
 }
 
 public protocol ModalCoordinator: DefaultCoordinator {
